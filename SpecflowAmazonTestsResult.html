@@ -1,0 +1,874 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<test-run id="0" runstate="Runnable" testcasecount="28" result="Passed" total="28" passed="28" failed="0" inconclusive="0" skipped="0" asserts="49" engine-version="3.12.0.0" clr-version="4.0.30319.42000" start-time="2021-06-20 21:11:45Z" end-time="2021-06-20 21:16:00Z" duration="255.577107">
+  <command-line><![CDATA[nunit3-console.exe  "--result=D:\SpecflowAmazonTestsResult.html;fromat=nunit3" C:\Users\shevc\source\repos\ClassLibrary3\ClassLibrary3\bin\Debug\ClassLibrary3.dll]]></command-line>
+  <test-suite type="Assembly" id="1-1040" name="ClassLibrary3.dll" fullname="C:\Users\shevc\source\repos\ClassLibrary3\ClassLibrary3\bin\Debug\ClassLibrary3.dll" runstate="Runnable" testcasecount="28" result="Passed" start-time="2021-06-20T21:11:46.1023970Z" end-time="2021-06-20T21:16:00.8930873Z" duration="254.789553" total="28" passed="28" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="49">
+    <environment framework-version="3.13.1.0" clr-version="4.0.30319.42000" os-version="Microsoft Windows NT 10.0.19041.0" platform="Win32NT" cwd="C:\Program Files (x86)\NUnit.org\nunit-console" machine-name="DESKTOP-DCJV05P" user="shevc" user-domain="DESKTOP-DCJV05P" culture="ru-RU" uiculture="ru-RU" os-architecture="x64" />
+    <settings>
+      <setting name="DisposeRunners" value="True" />
+      <setting name="WorkDirectory" value="C:\Program Files (x86)\NUnit.org\nunit-console" />
+      <setting name="ImageRuntimeVersion" value="4.0.30319" />
+      <setting name="ImageTargetFrameworkName" value=".NETFramework,Version=v4.7.2" />
+      <setting name="ImageRequiresX86" value="False" />
+      <setting name="ImageRequiresDefaultAppDomainAssemblyResolver" value="False" />
+      <setting name="TargetRuntimeFramework" value="net-4.0" />
+      <setting name="NumberOfTestWorkers" value="8" />
+    </settings>
+    <properties>
+      <property name="ParallelScope" value="Fixtures" />
+      <property name="LevelOfParallelism" value="3" />
+      <property name="_PID" value="37852" />
+      <property name="_APPDOMAIN" value="domain-" />
+    </properties>
+    <test-suite type="SetUpFixture" id="1-1000" name="[default namespace]" fullname="ClassLibrary3_NUnitAssemblyHooks" classname="ClassLibrary3_NUnitAssemblyHooks" runstate="Runnable" testcasecount="28" result="Passed" start-time="2021-06-20T21:11:46.1243984Z" end-time="2021-06-20T21:16:00.8920881Z" duration="254.768135" total="28" passed="28" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="49">
+      <output><![CDATA[-> Loading plugin C:\Users\shevc\source\repos\ClassLibrary3\ClassLibrary3\bin\Debug\TechTalk.SpecFlow.NUnit.SpecFlowPlugin.dll
+-> Loading plugin C:\Users\shevc\source\repos\ClassLibrary3\ClassLibrary3\bin\Debug\ClassLibrary3.dll
+-> Missing [assembly:RuntimePlugin] attribute in ClassLibrary3, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null. Please check https://go.specflow.org/doc-plugins for details.
+-> Using default config
+]]></output>
+      <test-suite type="TestSuite" id="1-1041" name="ClassLibrary3" fullname="ClassLibrary3" runstate="Runnable" testcasecount="28" result="Passed" start-time="2021-06-20T21:11:46.6694398Z" end-time="2021-06-20T21:16:00.8710854Z" duration="254.201640" total="28" passed="28" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="49">
+        <test-suite type="TestSuite" id="1-1042" name="Features" fullname="ClassLibrary3.Features" runstate="Runnable" testcasecount="28" result="Passed" start-time="2021-06-20T21:11:46.6694398Z" end-time="2021-06-20T21:16:00.8710854Z" duration="254.201583" total="28" passed="28" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="49">
+          <test-suite type="TestFixture" id="1-1014" name="AmazonPrimeTestsFeature" fullname="ClassLibrary3.Features.AmazonPrimeTestsFeature" classname="ClassLibrary3.Features.AmazonPrimeTestsFeature" runstate="Runnable" testcasecount="1" result="Passed" start-time="2021-06-20T21:11:46.6694398Z" end-time="2021-06-20T21:12:11.0170979Z" duration="24.347381" total="1" passed="1" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="0">
+            <properties>
+              <property name="Description" value="AmazonPrimeTests" />
+            </properties>
+            <test-case id="1-1015" name="CheckAmazonPrimeVideosRestrictionToUkraine" fullname="ClassLibrary3.Features.AmazonPrimeTestsFeature.CheckAmazonPrimeVideosRestrictionToUkraine" methodname="CheckAmazonPrimeVideosRestrictionToUkraine" classname="ClassLibrary3.Features.AmazonPrimeTestsFeature" runstate="Runnable" seed="290815409" result="Passed" start-time="2021-06-20T21:11:46.6804424Z" end-time="2021-06-20T21:12:11.0150966Z" duration="24.334807" asserts="0">
+              <properties>
+                <property name="Description" value="Check Amazon Prime videos restriction to Ukraine" />
+              </properties>
+              <output><![CDATA[Given User opens Amazon home page
+-> done: MainMenuSteps.OpenAmazonHomePage() (5,6s)
+And User clicks 'Sign in' button
+-> done: MainMenuSteps.ClickOnSignInButton() (1,6s)
+When User logs in site as login: "amazonTestAcc1234@gmail.com" password: "qweasd"
+-> done: MainMenuSteps.LogInSiteAsLoginPassword("amazonTestAcc1234...", "qweasd") (2,4s)
+And User hovers on 'Sign In' button
+-> done: MainMenuSteps.HoverOnSignInButton() (2,8s)
+And User clicks 'Watchlist' button
+-> done: MainMenuSteps.ClickWatchlistButton() (1,6s)
+And User searches 'The boys' using search field
+-> done: MainMenuSteps.SearcheUsingSearchField("'The boys'") (2,1s)
+And User clicks 'The boys' series block
+-> done: MainMenuSteps.ClickSeriesBlock() (3,4s)
+And User clicks 'Watch Trailer' button
+-> done: MainMenuSteps.ClickWatchTrailerButton() (0,4s)
+Then User checks 'Service Area Restriction' popup visibility
+-> done: MainMenuSteps.CheckPopupVisibility() (4,1s)
+]]></output>
+            </test-case>
+          </test-suite>
+          <test-suite type="TestFixture" id="1-1027" name="UserListsTestsFeature" fullname="ClassLibrary3.Features.UserListsTestsFeature" classname="ClassLibrary3.Features.UserListsTestsFeature" runstate="Runnable" testcasecount="10" result="Passed" start-time="2021-06-20T21:12:11.0170979Z" end-time="2021-06-20T21:14:47.8530255Z" duration="156.835723" total="10" passed="10" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="15">
+            <properties>
+              <property name="Description" value="UserListsTests" />
+            </properties>
+            <test-suite type="ParameterizedMethod" id="1-1036" name="CheckAddingAddressToList" fullname="ClassLibrary3.Features.UserListsTestsFeature.CheckAddingAddressToList" classname="ClassLibrary3.Features.UserListsTestsFeature" runstate="Runnable" testcasecount="8" result="Passed" start-time="2021-06-20T21:12:11.0181011Z" end-time="2021-06-20T21:14:05.2781541Z" duration="114.259699" total="8" passed="8" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="13">
+              <properties>
+                <property name="Description" value="Check adding address to list" />
+              </properties>
+              <test-case id="1-1028" name="CheckAddingAddressToList(&quot;Ivan&quot;,&quot;Ross Gellar street&quot;,&quot;New Zhytomir&quot;,&quot;09898&quot;,&quot;380690000000&quot;,null)" fullname="ClassLibrary3.Features.UserListsTestsFeature.CheckAddingAddressToList(&quot;Ivan&quot;,&quot;Ross Gellar street&quot;,&quot;New Zhytomir&quot;,&quot;09898&quot;,&quot;380690000000&quot;,null)" methodname="CheckAddingAddressToList" classname="ClassLibrary3.Features.UserListsTestsFeature" runstate="Runnable" seed="96565775" result="Passed" start-time="2021-06-20T21:12:11.0181011Z" end-time="2021-06-20T21:12:26.5373403Z" duration="15.518943" asserts="6">
+                <output><![CDATA[Given User opens Amazon home page
+-> done: MainMenuSteps.OpenAmazonHomePage() (3,8s)
+And User clicks 'Sign in' button
+-> done: MainMenuSteps.ClickOnSignInButton() (1,1s)
+When User logs in site as login: "amazonTestAcc1234@gmail.com" password: "qweasd"
+-> done: MainMenuSteps.LogInSiteAsLoginPassword("amazonTestAcc1234...", "qweasd") (1,3s)
+And User clicks on 'Deliver to' button
+-> done: MainMenuSteps.ClickOnDeliveryButton() (2,4s)
+And User clicks on 'Manage address book' button
+-> done: MainMenuSteps.ClickOnManageAddressBookButton() (1,3s)
+And User clicks on 'Add address' panel
+-> done: MainMenuSteps.ClickOnAddAddressPanel() (0,8s)
+And User clicks on 'Country & Region' drop-down list button
+-> done: MainMenuSteps.ClickOnDrop_DownListButton() (0,1s)
+And User clicks on 'Ukraine' item into drop-down list
+-> done: MainMenuSteps.ClickOnUkraineItemIntoDrop_DownList() (0,2s)
+And User enters his "Ivan", "Ross Gellar street", "New Zhytomir", "09898" and "380690000000"
+-> done: MainMenuSteps.EnterHisAnd("Ivan", "Ross Gellar street", "New Zhytomir", "09898", "380690000000") (1,9s)
+And User clicks 'Add address' button
+-> done: MainMenuSteps.ClickAddAddressButton() (1,4s)
+And User checks that address is added to addressBook with "Ivan", "Ross Gellar street", "New Zhytomir", "09898" and "380690000000"
+-> done: MainMenuSteps.CheckThatAddressIsAddedToAddressBookWithAnd("Ivan", "Ross Gellar street", "New Zhytomir", "09898", "380690000000") (0,1s)
+And User checks that name "Ivan" was added to addressBook correctly
+-> done: MainMenuSteps.CheckThatNameWasAddedToAddressBookCorrectly("Ivan") (0,1s)
+And User checks that street "Ross Gellar street" was added to addressBook correctly
+-> done: MainMenuSteps.CheckThatStreetWasAddedToAddressBookCorrectly("Ross Gellar street") (0,1s)
+And User checks that city "New Zhytomir" was added to addressBook correctly
+-> done: MainMenuSteps.CheckThatCityWasAddedToAddressBookCorrectly("New Zhytomir") (0,1s)
+And User checks that zipCode "09898" was added to addressBook correctly
+-> done: MainMenuSteps.CheckThatZipCodeWasAddedToAddressBookCorrectly("09898") (0,4s)
+And User checks that phone number "380690000000" was added to addressBook correctly
+-> done: MainMenuSteps.CheckThatPhoneNumberWasAddedToAddressBookCorrectly("380690000000") (0,1s)
+Then User checks that country "Ukraine" was added to addressBook correctly
+-> done: MainMenuSteps.CheckThatCountryWasAddedToAddressBookCorrectly("Ukraine") (0,1s)
+]]></output>
+              </test-case>
+              <test-case id="1-1029" name="CheckAddingAddressToList(&quot;Ivan&quot;,&quot;Ross Gellar street&quot;,&quot;New Zhytomir&quot;,&quot;09898&quot;,&quot;#$##$#$#$#$#&quot;,null)" fullname="ClassLibrary3.Features.UserListsTestsFeature.CheckAddingAddressToList(&quot;Ivan&quot;,&quot;Ross Gellar street&quot;,&quot;New Zhytomir&quot;,&quot;09898&quot;,&quot;#$##$#$#$#$#&quot;,null)" methodname="CheckAddingAddressToList" classname="ClassLibrary3.Features.UserListsTestsFeature" runstate="Runnable" seed="2072743990" result="Passed" start-time="2021-06-20T21:12:26.5373403Z" end-time="2021-06-20T21:12:42.1108653Z" duration="15.573212" asserts="1">
+                <output><![CDATA[Given User opens Amazon home page
+-> done: MainMenuSteps.OpenAmazonHomePage() (3,7s)
+And User clicks 'Sign in' button
+-> done: MainMenuSteps.ClickOnSignInButton() (0,9s)
+When User logs in site as login: "amazonTestAcc1234@gmail.com" password: "qweasd"
+-> done: MainMenuSteps.LogInSiteAsLoginPassword("amazonTestAcc1234...", "qweasd") (1,2s)
+And User clicks on 'Deliver to' button
+-> done: MainMenuSteps.ClickOnDeliveryButton() (2,1s)
+And User clicks on 'Manage address book' button
+-> done: MainMenuSteps.ClickOnManageAddressBookButton() (1,7s)
+And User clicks on 'Add address' panel
+-> done: MainMenuSteps.ClickOnAddAddressPanel() (1,1s)
+And User clicks on 'Country & Region' drop-down list button
+-> done: MainMenuSteps.ClickOnDrop_DownListButton() (0,3s)
+And User clicks on 'Ukraine' item into drop-down list
+-> done: MainMenuSteps.ClickOnUkraineItemIntoDrop_DownList() (0,6s)
+And User enters his "Ivan", "Ross Gellar street", "New Zhytomir", "09898" and "#$##$#$#$#$#"
+-> done: MainMenuSteps.EnterHisAnd("Ivan", "Ross Gellar street", "New Zhytomir", "09898", "#$##$#$#$#$#") (1,4s)
+And User clicks 'Add address' button
+-> done: MainMenuSteps.ClickAddAddressButton() (0,8s)
+And User checks that address is added to addressBook with "Ivan", "Ross Gellar street", "New Zhytomir", "09898" and "#$##$#$#$#$#"
+-> done: MainMenuSteps.CheckThatAddressIsAddedToAddressBookWithAnd("Ivan", "Ross Gellar street", "New Zhytomir", "09898", "#$##$#$#$#$#") (0,3s)
+And User checks that name "Ivan" was added to addressBook correctly
+-> done: MainMenuSteps.CheckThatNameWasAddedToAddressBookCorrectly("Ivan") (0,0s)
+And User checks that street "Ross Gellar street" was added to addressBook correctly
+-> done: MainMenuSteps.CheckThatStreetWasAddedToAddressBookCorrectly("Ross Gellar street") (0,1s)
+And User checks that city "New Zhytomir" was added to addressBook correctly
+-> done: MainMenuSteps.CheckThatCityWasAddedToAddressBookCorrectly("New Zhytomir") (0,5s)
+And User checks that zipCode "09898" was added to addressBook correctly
+-> done: MainMenuSteps.CheckThatZipCodeWasAddedToAddressBookCorrectly("09898") (0,3s)
+And User checks that phone number "#$##$#$#$#$#" was added to addressBook correctly
+-> done: MainMenuSteps.CheckThatPhoneNumberWasAddedToAddressBookCorrectly("#$##$#$#$#$#") (0,1s)
+Then User checks that country "Ukraine" was added to addressBook correctly
+-> done: MainMenuSteps.CheckThatCountryWasAddedToAddressBookCorrectly("Ukraine") (0,1s)
+]]></output>
+              </test-case>
+              <test-case id="1-1030" name="CheckAddingAddressToList(&quot;Ivan&quot;,&quot;Ross Gellar street&quot;,&quot;New Zhytomir&quot;,&quot;09898&quot;,&quot;qweqweqweqww&quot;,null)" fullname="ClassLibrary3.Features.UserListsTestsFeature.CheckAddingAddressToList(&quot;Ivan&quot;,&quot;Ross Gellar street&quot;,&quot;New Zhytomir&quot;,&quot;09898&quot;,&quot;qweqweqweqww&quot;,null)" methodname="CheckAddingAddressToList" classname="ClassLibrary3.Features.UserListsTestsFeature" runstate="Runnable" seed="1421579237" result="Passed" start-time="2021-06-20T21:12:42.1108653Z" end-time="2021-06-20T21:13:02.1043249Z" duration="19.993071" asserts="1">
+                <output><![CDATA[Given User opens Amazon home page
+-> done: MainMenuSteps.OpenAmazonHomePage() (5,2s)
+And User clicks 'Sign in' button
+-> done: MainMenuSteps.ClickOnSignInButton() (1,5s)
+When User logs in site as login: "amazonTestAcc1234@gmail.com" password: "qweasd"
+-> done: MainMenuSteps.LogInSiteAsLoginPassword("amazonTestAcc1234...", "qweasd") (2,1s)
+And User clicks on 'Deliver to' button
+-> done: MainMenuSteps.ClickOnDeliveryButton() (2,8s)
+And User clicks on 'Manage address book' button
+-> done: MainMenuSteps.ClickOnManageAddressBookButton() (1,8s)
+And User clicks on 'Add address' panel
+-> done: MainMenuSteps.ClickOnAddAddressPanel() (1,1s)
+And User clicks on 'Country & Region' drop-down list button
+-> done: MainMenuSteps.ClickOnDrop_DownListButton() (0,3s)
+And User clicks on 'Ukraine' item into drop-down list
+-> done: MainMenuSteps.ClickOnUkraineItemIntoDrop_DownList() (1,4s)
+And User enters his "Ivan", "Ross Gellar street", "New Zhytomir", "09898" and "qweqweqweqww"
+-> done: MainMenuSteps.EnterHisAnd("Ivan", "Ross Gellar street", "New Zhytomir", "09898", "qweqweqweqww") (1,3s)
+And User clicks 'Add address' button
+-> done: MainMenuSteps.ClickAddAddressButton() (1,0s)
+And User checks that address is added to addressBook with "Ivan", "Ross Gellar street", "New Zhytomir", "09898" and "qweqweqweqww"
+-> done: MainMenuSteps.CheckThatAddressIsAddedToAddressBookWithAnd("Ivan", "Ross Gellar street", "New Zhytomir", "09898", "qweqweqweqww") (0,1s)
+And User checks that name "Ivan" was added to addressBook correctly
+-> done: MainMenuSteps.CheckThatNameWasAddedToAddressBookCorrectly("Ivan") (0,1s)
+And User checks that street "Ross Gellar street" was added to addressBook correctly
+-> done: MainMenuSteps.CheckThatStreetWasAddedToAddressBookCorrectly("Ross Gellar street") (0,2s)
+And User checks that city "New Zhytomir" was added to addressBook correctly
+-> done: MainMenuSteps.CheckThatCityWasAddedToAddressBookCorrectly("New Zhytomir") (0,6s)
+And User checks that zipCode "09898" was added to addressBook correctly
+-> done: MainMenuSteps.CheckThatZipCodeWasAddedToAddressBookCorrectly("09898") (0,1s)
+And User checks that phone number "qweqweqweqww" was added to addressBook correctly
+-> done: MainMenuSteps.CheckThatPhoneNumberWasAddedToAddressBookCorrectly("qweqweqweqww") (0,1s)
+Then User checks that country "Ukraine" was added to addressBook correctly
+-> done: MainMenuSteps.CheckThatCountryWasAddedToAddressBookCorrectly("Ukraine") (0,1s)
+]]></output>
+              </test-case>
+              <test-case id="1-1031" name="CheckAddingAddressToList(&quot;Ivan&quot;,&quot;Ross Gellar street&quot;,&quot;New Zhytomir&quot;,&quot;09898&quot;,&quot;&quot;,null)" fullname="ClassLibrary3.Features.UserListsTestsFeature.CheckAddingAddressToList(&quot;Ivan&quot;,&quot;Ross Gellar street&quot;,&quot;New Zhytomir&quot;,&quot;09898&quot;,&quot;&quot;,null)" methodname="CheckAddingAddressToList" classname="ClassLibrary3.Features.UserListsTestsFeature" runstate="Runnable" seed="1656658092" result="Passed" start-time="2021-06-20T21:13:02.1043249Z" end-time="2021-06-20T21:13:14.3984787Z" duration="12.294818" asserts="1">
+                <output><![CDATA[Given User opens Amazon home page
+-> done: MainMenuSteps.OpenAmazonHomePage() (3,3s)
+And User clicks 'Sign in' button
+-> done: MainMenuSteps.ClickOnSignInButton() (1,0s)
+When User logs in site as login: "amazonTestAcc1234@gmail.com" password: "qweasd"
+-> done: MainMenuSteps.LogInSiteAsLoginPassword("amazonTestAcc1234...", "qweasd") (1,8s)
+And User clicks on 'Deliver to' button
+-> done: MainMenuSteps.ClickOnDeliveryButton() (1,8s)
+And User clicks on 'Manage address book' button
+-> done: MainMenuSteps.ClickOnManageAddressBookButton() (1,2s)
+And User clicks on 'Add address' panel
+-> done: MainMenuSteps.ClickOnAddAddressPanel() (0,7s)
+And User clicks on 'Country & Region' drop-down list button
+-> done: MainMenuSteps.ClickOnDrop_DownListButton() (0,1s)
+And User clicks on 'Ukraine' item into drop-down list
+-> done: MainMenuSteps.ClickOnUkraineItemIntoDrop_DownList() (0,2s)
+And User enters his "Ivan", "Ross Gellar street", "New Zhytomir", "09898" and ""
+-> done: MainMenuSteps.EnterHisAnd("Ivan", "Ross Gellar street", "New Zhytomir", "09898", "") (1,2s)
+And User clicks 'Add address' button
+-> done: MainMenuSteps.ClickAddAddressButton() (0,7s)
+And User checks that address is added to addressBook with "Ivan", "Ross Gellar street", "New Zhytomir", "09898" and ""
+-> done: MainMenuSteps.CheckThatAddressIsAddedToAddressBookWithAnd("Ivan", "Ross Gellar street", "New Zhytomir", "09898", "") (0,1s)
+And User checks that name "Ivan" was added to addressBook correctly
+-> done: MainMenuSteps.CheckThatNameWasAddedToAddressBookCorrectly("Ivan") (0,0s)
+And User checks that street "Ross Gellar street" was added to addressBook correctly
+-> done: MainMenuSteps.CheckThatStreetWasAddedToAddressBookCorrectly("Ross Gellar street") (0,0s)
+And User checks that city "New Zhytomir" was added to addressBook correctly
+-> done: MainMenuSteps.CheckThatCityWasAddedToAddressBookCorrectly("New Zhytomir") (0,0s)
+And User checks that zipCode "09898" was added to addressBook correctly
+-> done: MainMenuSteps.CheckThatZipCodeWasAddedToAddressBookCorrectly("09898") (0,0s)
+And User checks that phone number "" was added to addressBook correctly
+-> done: MainMenuSteps.CheckThatPhoneNumberWasAddedToAddressBookCorrectly("") (0,0s)
+Then User checks that country "Ukraine" was added to addressBook correctly
+-> done: MainMenuSteps.CheckThatCountryWasAddedToAddressBookCorrectly("Ukraine") (0,0s)
+]]></output>
+              </test-case>
+              <test-case id="1-1032" name="CheckAddingAddressToList(&quot;Ivan&quot;,&quot;Ross Gellar street&quot;,&quot;New Zhytomir&quot;,&quot;&quot;,&quot;380690000000&quot;,null)" fullname="ClassLibrary3.Features.UserListsTestsFeature.CheckAddingAddressToList(&quot;Ivan&quot;,&quot;Ross Gellar street&quot;,&quot;New Zhytomir&quot;,&quot;&quot;,&quot;380690000000&quot;,null)" methodname="CheckAddingAddressToList" classname="ClassLibrary3.Features.UserListsTestsFeature" runstate="Runnable" seed="4715108" result="Passed" start-time="2021-06-20T21:13:14.3984787Z" end-time="2021-06-20T21:13:26.0341479Z" duration="11.634877" asserts="1">
+                <output><![CDATA[Given User opens Amazon home page
+-> done: MainMenuSteps.OpenAmazonHomePage() (3,0s)
+And User clicks 'Sign in' button
+-> done: MainMenuSteps.ClickOnSignInButton() (1,3s)
+When User logs in site as login: "amazonTestAcc1234@gmail.com" password: "qweasd"
+-> done: MainMenuSteps.LogInSiteAsLoginPassword("amazonTestAcc1234...", "qweasd") (1,0s)
+And User clicks on 'Deliver to' button
+-> done: MainMenuSteps.ClickOnDeliveryButton() (2,1s)
+And User clicks on 'Manage address book' button
+-> done: MainMenuSteps.ClickOnManageAddressBookButton() (1,3s)
+And User clicks on 'Add address' panel
+-> done: MainMenuSteps.ClickOnAddAddressPanel() (0,6s)
+And User clicks on 'Country & Region' drop-down list button
+-> done: MainMenuSteps.ClickOnDrop_DownListButton() (0,1s)
+And User clicks on 'Ukraine' item into drop-down list
+-> done: MainMenuSteps.ClickOnUkraineItemIntoDrop_DownList() (0,2s)
+And User enters his "Ivan", "Ross Gellar street", "New Zhytomir", "" and "380690000000"
+-> done: MainMenuSteps.EnterHisAnd("Ivan", "Ross Gellar street", "New Zhytomir", "", "380690000000") (1,2s)
+And User clicks 'Add address' button
+-> done: MainMenuSteps.ClickAddAddressButton() (0,5s)
+And User checks that address is added to addressBook with "Ivan", "Ross Gellar street", "New Zhytomir", "" and "380690000000"
+-> done: MainMenuSteps.CheckThatAddressIsAddedToAddressBookWithAnd("Ivan", "Ross Gellar street", "New Zhytomir", "", "380690000000") (0,1s)
+And User checks that name "Ivan" was added to addressBook correctly
+-> done: MainMenuSteps.CheckThatNameWasAddedToAddressBookCorrectly("Ivan") (0,0s)
+And User checks that street "Ross Gellar street" was added to addressBook correctly
+-> done: MainMenuSteps.CheckThatStreetWasAddedToAddressBookCorrectly("Ross Gellar street") (0,0s)
+And User checks that city "New Zhytomir" was added to addressBook correctly
+-> done: MainMenuSteps.CheckThatCityWasAddedToAddressBookCorrectly("New Zhytomir") (0,0s)
+And User checks that zipCode "" was added to addressBook correctly
+-> done: MainMenuSteps.CheckThatZipCodeWasAddedToAddressBookCorrectly("") (0,0s)
+And User checks that phone number "380690000000" was added to addressBook correctly
+-> done: MainMenuSteps.CheckThatPhoneNumberWasAddedToAddressBookCorrectly("380690000000") (0,0s)
+Then User checks that country "Ukraine" was added to addressBook correctly
+-> done: MainMenuSteps.CheckThatCountryWasAddedToAddressBookCorrectly("Ukraine") (0,0s)
+]]></output>
+              </test-case>
+              <test-case id="1-1033" name="CheckAddingAddressToList(&quot;Ivan&quot;,&quot;Ross Gellar street&quot;,&quot;&quot;,&quot;09898&quot;,&quot;380690000000&quot;,null)" fullname="ClassLibrary3.Features.UserListsTestsFeature.CheckAddingAddressToList(&quot;Ivan&quot;,&quot;Ross Gellar street&quot;,&quot;&quot;,&quot;09898&quot;,&quot;380690000000&quot;,null)" methodname="CheckAddingAddressToList" classname="ClassLibrary3.Features.UserListsTestsFeature" runstate="Runnable" seed="606895876" result="Passed" start-time="2021-06-20T21:13:26.0341479Z" end-time="2021-06-20T21:13:39.5964796Z" duration="13.562856" asserts="1">
+                <output><![CDATA[Given User opens Amazon home page
+-> done: MainMenuSteps.OpenAmazonHomePage() (3,4s)
+And User clicks 'Sign in' button
+-> done: MainMenuSteps.ClickOnSignInButton() (0,9s)
+When User logs in site as login: "amazonTestAcc1234@gmail.com" password: "qweasd"
+-> done: MainMenuSteps.LogInSiteAsLoginPassword("amazonTestAcc1234...", "qweasd") (1,1s)
+And User clicks on 'Deliver to' button
+-> done: MainMenuSteps.ClickOnDeliveryButton() (2,0s)
+And User clicks on 'Manage address book' button
+-> done: MainMenuSteps.ClickOnManageAddressBookButton() (1,5s)
+And User clicks on 'Add address' panel
+-> done: MainMenuSteps.ClickOnAddAddressPanel() (0,9s)
+And User clicks on 'Country & Region' drop-down list button
+-> done: MainMenuSteps.ClickOnDrop_DownListButton() (0,2s)
+And User clicks on 'Ukraine' item into drop-down list
+-> done: MainMenuSteps.ClickOnUkraineItemIntoDrop_DownList() (0,9s)
+And User enters his "Ivan", "Ross Gellar street", "", "09898" and "380690000000"
+-> done: MainMenuSteps.EnterHisAnd("Ivan", "Ross Gellar street", "", "09898", "380690000000") (1,4s)
+And User clicks 'Add address' button
+-> done: MainMenuSteps.ClickAddAddressButton() (0,7s)
+And User checks that address is added to addressBook with "Ivan", "Ross Gellar street", "", "09898" and "380690000000"
+-> done: MainMenuSteps.CheckThatAddressIsAddedToAddressBookWithAnd("Ivan", "Ross Gellar street", "", "09898", "380690000000") (0,1s)
+And User checks that name "Ivan" was added to addressBook correctly
+-> done: MainMenuSteps.CheckThatNameWasAddedToAddressBookCorrectly("Ivan") (0,0s)
+And User checks that street "Ross Gellar street" was added to addressBook correctly
+-> done: MainMenuSteps.CheckThatStreetWasAddedToAddressBookCorrectly("Ross Gellar street") (0,0s)
+And User checks that city "" was added to addressBook correctly
+-> done: MainMenuSteps.CheckThatCityWasAddedToAddressBookCorrectly("") (0,0s)
+And User checks that zipCode "09898" was added to addressBook correctly
+-> done: MainMenuSteps.CheckThatZipCodeWasAddedToAddressBookCorrectly("09898") (0,0s)
+And User checks that phone number "380690000000" was added to addressBook correctly
+-> done: MainMenuSteps.CheckThatPhoneNumberWasAddedToAddressBookCorrectly("380690000000") (0,0s)
+Then User checks that country "Ukraine" was added to addressBook correctly
+-> done: MainMenuSteps.CheckThatCountryWasAddedToAddressBookCorrectly("Ukraine") (0,0s)
+]]></output>
+              </test-case>
+              <test-case id="1-1034" name="CheckAddingAddressToList(&quot;Ivan&quot;,&quot;&quot;,&quot;New Zhytomir&quot;,&quot;09898&quot;,&quot;380690000000&quot;,null)" fullname="ClassLibrary3.Features.UserListsTestsFeature.CheckAddingAddressToList(&quot;Ivan&quot;,&quot;&quot;,&quot;New Zhytomir&quot;,&quot;09898&quot;,&quot;380690000000&quot;,null)" methodname="CheckAddingAddressToList" classname="ClassLibrary3.Features.UserListsTestsFeature" runstate="Runnable" seed="1588908418" result="Passed" start-time="2021-06-20T21:13:39.5964796Z" end-time="2021-06-20T21:13:54.4032606Z" duration="14.806836" asserts="1">
+                <output><![CDATA[Given User opens Amazon home page
+-> done: MainMenuSteps.OpenAmazonHomePage() (4,9s)
+And User clicks 'Sign in' button
+-> done: MainMenuSteps.ClickOnSignInButton() (1,4s)
+When User logs in site as login: "amazonTestAcc1234@gmail.com" password: "qweasd"
+-> done: MainMenuSteps.LogInSiteAsLoginPassword("amazonTestAcc1234...", "qweasd") (2,2s)
+And User clicks on 'Deliver to' button
+-> done: MainMenuSteps.ClickOnDeliveryButton() (1,9s)
+And User clicks on 'Manage address book' button
+-> done: MainMenuSteps.ClickOnManageAddressBookButton() (1,1s)
+And User clicks on 'Add address' panel
+-> done: MainMenuSteps.ClickOnAddAddressPanel() (0,9s)
+And User clicks on 'Country & Region' drop-down list button
+-> done: MainMenuSteps.ClickOnDrop_DownListButton() (0,1s)
+And User clicks on 'Ukraine' item into drop-down list
+-> done: MainMenuSteps.ClickOnUkraineItemIntoDrop_DownList() (0,2s)
+And User enters his "Ivan", "", "New Zhytomir", "09898" and "380690000000"
+-> done: MainMenuSteps.EnterHisAnd("Ivan", "", "New Zhytomir", "09898", "380690000000") (1,1s)
+And User clicks 'Add address' button
+-> done: MainMenuSteps.ClickAddAddressButton() (0,6s)
+And User checks that address is added to addressBook with "Ivan", "", "New Zhytomir", "09898" and "380690000000"
+-> done: MainMenuSteps.CheckThatAddressIsAddedToAddressBookWithAnd("Ivan", "", "New Zhytomir", "09898", "380690000000") (0,1s)
+And User checks that name "Ivan" was added to addressBook correctly
+-> done: MainMenuSteps.CheckThatNameWasAddedToAddressBookCorrectly("Ivan") (0,0s)
+And User checks that street "" was added to addressBook correctly
+-> done: MainMenuSteps.CheckThatStreetWasAddedToAddressBookCorrectly("") (0,0s)
+And User checks that city "New Zhytomir" was added to addressBook correctly
+-> done: MainMenuSteps.CheckThatCityWasAddedToAddressBookCorrectly("New Zhytomir") (0,0s)
+And User checks that zipCode "09898" was added to addressBook correctly
+-> done: MainMenuSteps.CheckThatZipCodeWasAddedToAddressBookCorrectly("09898") (0,0s)
+And User checks that phone number "380690000000" was added to addressBook correctly
+-> done: MainMenuSteps.CheckThatPhoneNumberWasAddedToAddressBookCorrectly("380690000000") (0,0s)
+Then User checks that country "Ukraine" was added to addressBook correctly
+-> done: MainMenuSteps.CheckThatCountryWasAddedToAddressBookCorrectly("Ukraine") (0,0s)
+]]></output>
+              </test-case>
+              <test-case id="1-1035" name="CheckAddingAddressToList(&quot;&quot;,&quot;Ross Gellar street&quot;,&quot;New Zhytomir&quot;,&quot;09898&quot;,&quot;380690000000&quot;,null)" fullname="ClassLibrary3.Features.UserListsTestsFeature.CheckAddingAddressToList(&quot;&quot;,&quot;Ross Gellar street&quot;,&quot;New Zhytomir&quot;,&quot;09898&quot;,&quot;380690000000&quot;,null)" methodname="CheckAddingAddressToList" classname="ClassLibrary3.Features.UserListsTestsFeature" runstate="Runnable" seed="1602637279" result="Passed" start-time="2021-06-20T21:13:54.4032606Z" end-time="2021-06-20T21:14:05.2781541Z" duration="10.874260" asserts="1">
+                <output><![CDATA[Given User opens Amazon home page
+-> done: MainMenuSteps.OpenAmazonHomePage() (3,0s)
+And User clicks 'Sign in' button
+-> done: MainMenuSteps.ClickOnSignInButton() (0,8s)
+When User logs in site as login: "amazonTestAcc1234@gmail.com" password: "qweasd"
+-> done: MainMenuSteps.LogInSiteAsLoginPassword("amazonTestAcc1234...", "qweasd") (1,0s)
+And User clicks on 'Deliver to' button
+-> done: MainMenuSteps.ClickOnDeliveryButton() (1,8s)
+And User clicks on 'Manage address book' button
+-> done: MainMenuSteps.ClickOnManageAddressBookButton() (1,2s)
+And User clicks on 'Add address' panel
+-> done: MainMenuSteps.ClickOnAddAddressPanel() (0,6s)
+And User clicks on 'Country & Region' drop-down list button
+-> done: MainMenuSteps.ClickOnDrop_DownListButton() (0,1s)
+And User clicks on 'Ukraine' item into drop-down list
+-> done: MainMenuSteps.ClickOnUkraineItemIntoDrop_DownList() (0,2s)
+And User enters his "", "Ross Gellar street", "New Zhytomir", "09898" and "380690000000"
+-> done: MainMenuSteps.EnterHisAnd("", "Ross Gellar street", "New Zhytomir", "09898", "380690000000") (1,1s)
+And User clicks 'Add address' button
+-> done: MainMenuSteps.ClickAddAddressButton() (0,7s)
+And User checks that address is added to addressBook with "", "Ross Gellar street", "New Zhytomir", "09898" and "380690000000"
+-> done: MainMenuSteps.CheckThatAddressIsAddedToAddressBookWithAnd("", "Ross Gellar street", "New Zhytomir", "09898", "380690000000") (0,1s)
+And User checks that name "" was added to addressBook correctly
+-> done: MainMenuSteps.CheckThatNameWasAddedToAddressBookCorrectly("") (0,0s)
+And User checks that street "Ross Gellar street" was added to addressBook correctly
+-> done: MainMenuSteps.CheckThatStreetWasAddedToAddressBookCorrectly("Ross Gellar street") (0,0s)
+And User checks that city "New Zhytomir" was added to addressBook correctly
+-> done: MainMenuSteps.CheckThatCityWasAddedToAddressBookCorrectly("New Zhytomir") (0,0s)
+And User checks that zipCode "09898" was added to addressBook correctly
+-> done: MainMenuSteps.CheckThatZipCodeWasAddedToAddressBookCorrectly("09898") (0,0s)
+And User checks that phone number "380690000000" was added to addressBook correctly
+-> done: MainMenuSteps.CheckThatPhoneNumberWasAddedToAddressBookCorrectly("380690000000") (0,0s)
+Then User checks that country "Ukraine" was added to addressBook correctly
+-> done: MainMenuSteps.CheckThatCountryWasAddedToAddressBookCorrectly("Ukraine") (0,0s)
+]]></output>
+              </test-case>
+            </test-suite>
+            <test-suite type="ParameterizedMethod" id="1-1039" name="CheckProductAddingToWishList" fullname="ClassLibrary3.Features.UserListsTestsFeature.CheckProductAddingToWishList" classname="ClassLibrary3.Features.UserListsTestsFeature" runstate="Runnable" testcasecount="2" result="Passed" start-time="2021-06-20T21:14:05.2781541Z" end-time="2021-06-20T21:14:47.8520253Z" duration="42.574466" total="2" passed="2" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="2">
+              <properties>
+                <property name="Description" value="Check product adding to wish list" />
+              </properties>
+              <test-case id="1-1037" name="CheckProductAddingToWishList(&quot;Xerox&quot;,&quot;#$@$&quot;,null)" fullname="ClassLibrary3.Features.UserListsTestsFeature.CheckProductAddingToWishList(&quot;Xerox&quot;,&quot;#$@$&quot;,null)" methodname="CheckProductAddingToWishList" classname="ClassLibrary3.Features.UserListsTestsFeature" runstate="Runnable" seed="1678239613" result="Passed" start-time="2021-06-20T21:14:05.2781541Z" end-time="2021-06-20T21:14:25.2927899Z" duration="20.014922" asserts="1">
+                <output><![CDATA[Given User opens Amazon home page
+-> done: MainMenuSteps.OpenAmazonHomePage() (2,9s)
+When User clicks 'Sign in' button
+-> done: MainMenuSteps.ClickSignInButton() (0,8s)
+And User logs in site as login: "amazonTestAcc1234@gmail.com" password: "qweasd"
+-> done: MainMenuSteps.LogInSiteAsLoginPassword("amazonTestAcc1234...", "qweasd") (1,0s)
+And User searches "Xerox" using search field
+-> done: MainMenuSteps.SearcheUsingSearchField(""Xerox"") (4,5s)
+And User clicks on first product
+-> done: MainMenuSteps.ClickOnFirstProduct() (3,0s)
+When User clicks on 'Add to list' button
+-> done: MainMenuSteps.ClickOnAddToListButton() (2,2s)
+And User enters list name - "#$@$"
+-> done: MainMenuSteps.EnterListName_("#$@$") (1,1s)
+And User clicks on 'Create list' button
+-> done: MainMenuSteps.ClickOnCreateListButton() (0,2s)
+And User clicks on 'View List' button
+-> done: MainMenuSteps.ClickOnViewListButton() (3,1s)
+Then User checks that "Xerox" is added to wish list
+-> done: MainMenuSteps.CheckThatIsAddedToWishList("Xerox") (0,5s)
+]]></output>
+              </test-case>
+              <test-case id="1-1038" name="CheckProductAddingToWishList(&quot;Apple&quot;,&quot;123123132&quot;,null)" fullname="ClassLibrary3.Features.UserListsTestsFeature.CheckProductAddingToWishList(&quot;Apple&quot;,&quot;123123132&quot;,null)" methodname="CheckProductAddingToWishList" classname="ClassLibrary3.Features.UserListsTestsFeature" runstate="Runnable" seed="659172802" result="Passed" start-time="2021-06-20T21:14:25.2927899Z" end-time="2021-06-20T21:14:47.8520253Z" duration="22.559416" asserts="1">
+                <output><![CDATA[Given User opens Amazon home page
+-> done: MainMenuSteps.OpenAmazonHomePage() (5,6s)
+When User clicks 'Sign in' button
+-> done: MainMenuSteps.ClickSignInButton() (1,7s)
+And User logs in site as login: "amazonTestAcc1234@gmail.com" password: "qweasd"
+-> done: MainMenuSteps.LogInSiteAsLoginPassword("amazonTestAcc1234...", "qweasd") (2,3s)
+And User searches "Apple" using search field
+-> done: MainMenuSteps.SearcheUsingSearchField(""Apple"") (4,3s)
+And User clicks on first product
+-> done: MainMenuSteps.ClickOnFirstProduct() (2,8s)
+When User clicks on 'Add to list' button
+-> done: MainMenuSteps.ClickOnAddToListButton() (1,3s)
+And User enters list name - "123123132"
+-> done: MainMenuSteps.EnterListName_("123123132") (1,2s)
+And User clicks on 'Create list' button
+-> done: MainMenuSteps.ClickOnCreateListButton() (0,1s)
+And User clicks on 'View List' button
+-> done: MainMenuSteps.ClickOnViewListButton() (3,0s)
+Then User checks that "Apple" is added to wish list
+-> done: MainMenuSteps.CheckThatIsAddedToWishList("Apple") (0,0s)
+]]></output>
+              </test-case>
+            </test-suite>
+          </test-suite>
+          <test-suite type="TestFixture" id="1-1001" name="AccountTestsFeature" fullname="ClassLibrary3.Features.AccountTestsFeature" classname="ClassLibrary3.Features.AccountTestsFeature" runstate="Runnable" testcasecount="9" result="Passed" start-time="2021-06-20T21:11:46.6694398Z" end-time="2021-06-20T21:15:08.2008586Z" duration="201.531617" total="9" passed="9" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="9">
+            <properties>
+              <property name="Description" value="AccountTests" />
+            </properties>
+            <test-suite type="ParameterizedMethod" id="1-1013" name="CheckAccountSwitching" fullname="ClassLibrary3.Features.AccountTestsFeature.CheckAccountSwitching" classname="ClassLibrary3.Features.AccountTestsFeature" runstate="Runnable" testcasecount="1" result="Passed" start-time="2021-06-20T21:11:46.6804424Z" end-time="2021-06-20T21:12:08.7506833Z" duration="22.070757" total="1" passed="1" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="1">
+              <properties>
+                <property name="Description" value="Check account switching" />
+              </properties>
+              <test-case id="1-1012" name="CheckAccountSwitching(&quot;testAmazon1235@gmail.com&quot;,&quot;qweasd&quot;,&quot;amazonTest&quot;,null)" fullname="ClassLibrary3.Features.AccountTestsFeature.CheckAccountSwitching(&quot;testAmazon1235@gmail.com&quot;,&quot;qweasd&quot;,&quot;amazonTest&quot;,null)" methodname="CheckAccountSwitching" classname="ClassLibrary3.Features.AccountTestsFeature" runstate="Runnable" seed="1435571730" result="Passed" start-time="2021-06-20T21:11:46.6804424Z" end-time="2021-06-20T21:12:08.7436845Z" duration="22.063429" asserts="1">
+                <output><![CDATA[Given User opens Amazon home page
+-> done: MainMenuSteps.OpenAmazonHomePage() (5,6s)
+And User clicks 'Sign in' button
+-> done: MainMenuSteps.ClickOnSignInButton() (1,5s)
+When User enter "amazonTestAcc1234@gmail.com" to 'Enter email or phone number' input field
+-> done: MainMenuSteps.EnterLoginToEmailOrPhoneNumberInputField("amazonTestAcc1234...") (0,8s)
+And User clicks on 'Continue authorization' button
+-> done: MainMenuSteps.ClickOnContinueAuthorizationButton() (0,9s)
+And User enter "qweasd" to 'Enter password' input field
+-> done: MainMenuSteps.EnterToInputField("qweasd") (0,1s)
+And User clicks on 'Continue authorization' button
+-> done: MainMenuSteps.ClickOnContinueAuthorizationButton() (0,2s)
+And User hovers on 'Sign In' button
+-> done: MainMenuSteps.HoverOnSignInButton() (3,0s)
+And User clicks 'Switch accounts' button
+-> done: MainMenuSteps.ClickSwitchAccountButton() (1,3s)
+And User clicks on 'Add account' button
+-> done: MainMenuSteps.ClickAddAccountButton() (1,3s)
+And User enter "testAmazon1235@gmail.com" to 'Enter email or phone number' input field
+-> done: MainMenuSteps.EnterLoginToEmailOrPhoneNumberInputField("testAmazon1235@gm...") (0,3s)
+And User clicks on 'Continue authorization' button
+-> done: MainMenuSteps.ClickOnContinueAuthorizationButton() (1,1s)
+And User waits for three seconds to make web-site sure that user is a real person
+-> done: MainMenuSteps.WaitForThreeSecondsToMakeWeb_SiteSureThatUserIsARealPerson() (3,0s)
+And User enter "qweasd" to 'Enter password' input field
+-> done: MainMenuSteps.EnterToInputField("qweasd") (0,1s)
+And User clicks on 'Continue authorization' button
+-> done: MainMenuSteps.ClickOnContinueAuthorizationButton() (0,1s)
+Then User checks that account is switched to "amazonTest"
+-> done: MainMenuSteps.CheckThatAccountIsSwitchedTo("amazonTest") (2,2s)
+]]></output>
+              </test-case>
+            </test-suite>
+            <test-suite type="ParameterizedMethod" id="1-1011" name="CheckChangingPassword" fullname="ClassLibrary3.Features.AccountTestsFeature.CheckChangingPassword" classname="ClassLibrary3.Features.AccountTestsFeature" runstate="Runnable" testcasecount="3" result="Passed" start-time="2021-06-20T21:12:08.7526854Z" end-time="2021-06-20T21:12:51.6047529Z" duration="42.852686" total="3" passed="3" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="3">
+              <properties>
+                <property name="Description" value="Check changing password" />
+              </properties>
+              <test-case id="1-1008" name="CheckChangingPassword(&quot;qweasd&quot;,&quot;&quot;,&quot;false&quot;,null)" fullname="ClassLibrary3.Features.AccountTestsFeature.CheckChangingPassword(&quot;qweasd&quot;,&quot;&quot;,&quot;false&quot;,null)" methodname="CheckChangingPassword" classname="ClassLibrary3.Features.AccountTestsFeature" runstate="Runnable" seed="1175838046" result="Passed" start-time="2021-06-20T21:12:08.7526854Z" end-time="2021-06-20T21:12:21.4136751Z" duration="12.660936" asserts="1">
+                <output><![CDATA[Given User opens Amazon home page
+-> done: MainMenuSteps.OpenAmazonHomePage() (3,7s)
+And User clicks 'Sign in' button
+-> done: MainMenuSteps.ClickOnSignInButton() (1,3s)
+When User logs in site as login: "amazonTestAcc1234@gmail.com" password: "qweasd"
+-> done: MainMenuSteps.LogInSiteAsLoginPassword("amazonTestAcc1234...", "qweasd") (1,7s)
+And User clicks 'Sign in' button
+-> done: MainMenuSteps.ClickSignInButton() (2,6s)
+And User clicks 'Login and security' button
+-> done: MainMenuSteps.ClickLoginAndSecurityButton() (0,8s)
+And User clicks on 'Edit password' button
+-> done: MainMenuSteps.ClickOnEditPasswordButton() (0,9s)
+And User enter "qweasd" as 'Current password'
+-> done: MainMenuSteps.EnterAs("qweasd") (0,1s)
+And User enter "" to 'New password' input field
+-> done: MainMenuSteps.EnterNewPasswordToInputField("") (0,1s)
+And User enter "" to 'Reenter new password' input field
+-> done: MainMenuSteps.ReenterNewPasswordToInputField("") (0,4s)
+And User clicks on 'Save changes' button
+-> done: MainMenuSteps.ClickOnSaveChangesButton() (0,7s)
+Then User checks that information box about password changing is "false"
+-> done: MainMenuSteps.CheckThatInformationBoxAboutPasswordChangingIsShown("false") (0,0s)
+]]></output>
+              </test-case>
+              <test-case id="1-1009" name="CheckChangingPassword(&quot;qweasd&quot;,&quot;qweasd&quot;,&quot;true&quot;,null)" fullname="ClassLibrary3.Features.AccountTestsFeature.CheckChangingPassword(&quot;qweasd&quot;,&quot;qweasd&quot;,&quot;true&quot;,null)" methodname="CheckChangingPassword" classname="ClassLibrary3.Features.AccountTestsFeature" runstate="Runnable" seed="1014997466" result="Passed" start-time="2021-06-20T21:12:21.4136751Z" end-time="2021-06-20T21:12:34.4127259Z" duration="12.999346" asserts="1">
+                <output><![CDATA[Given User opens Amazon home page
+-> done: MainMenuSteps.OpenAmazonHomePage() (3,4s)
+And User clicks 'Sign in' button
+-> done: MainMenuSteps.ClickOnSignInButton() (0,9s)
+When User logs in site as login: "amazonTestAcc1234@gmail.com" password: "qweasd"
+-> done: MainMenuSteps.LogInSiteAsLoginPassword("amazonTestAcc1234...", "qweasd") (1,1s)
+And User clicks 'Sign in' button
+-> done: MainMenuSteps.ClickSignInButton() (3,3s)
+And User clicks 'Login and security' button
+-> done: MainMenuSteps.ClickLoginAndSecurityButton() (1,0s)
+And User clicks on 'Edit password' button
+-> done: MainMenuSteps.ClickOnEditPasswordButton() (1,0s)
+And User enter "qweasd" as 'Current password'
+-> done: MainMenuSteps.EnterAs("qweasd") (0,2s)
+And User enter "qweasd" to 'New password' input field
+-> done: MainMenuSteps.EnterNewPasswordToInputField("qweasd") (0,1s)
+And User enter "qweasd" to 'Reenter new password' input field
+-> done: MainMenuSteps.ReenterNewPasswordToInputField("qweasd") (0,1s)
+And User clicks on 'Save changes' button
+-> done: MainMenuSteps.ClickOnSaveChangesButton() (1,5s)
+Then User checks that information box about password changing is "true"
+-> done: MainMenuSteps.CheckThatInformationBoxAboutPasswordChangingIsShown("true") (0,0s)
+]]></output>
+              </test-case>
+              <test-case id="1-1010" name="CheckChangingPassword(&quot;qweasd&quot;,&quot;qwert&quot;,&quot;false&quot;,null)" fullname="ClassLibrary3.Features.AccountTestsFeature.CheckChangingPassword(&quot;qweasd&quot;,&quot;qwert&quot;,&quot;false&quot;,null)" methodname="CheckChangingPassword" classname="ClassLibrary3.Features.AccountTestsFeature" runstate="Runnable" seed="1978035947" result="Passed" start-time="2021-06-20T21:12:34.4127259Z" end-time="2021-06-20T21:12:51.6047529Z" duration="17.191957" asserts="1">
+                <output><![CDATA[Given User opens Amazon home page
+-> done: MainMenuSteps.OpenAmazonHomePage() (4,2s)
+And User clicks 'Sign in' button
+-> done: MainMenuSteps.ClickOnSignInButton() (1,2s)
+When User logs in site as login: "amazonTestAcc1234@gmail.com" password: "qweasd"
+-> done: MainMenuSteps.LogInSiteAsLoginPassword("amazonTestAcc1234...", "qweasd") (1,4s)
+And User clicks 'Sign in' button
+-> done: MainMenuSteps.ClickSignInButton() (3,6s)
+And User clicks 'Login and security' button
+-> done: MainMenuSteps.ClickLoginAndSecurityButton() (1,3s)
+And User clicks on 'Edit password' button
+-> done: MainMenuSteps.ClickOnEditPasswordButton() (1,7s)
+And User enter "qweasd" as 'Current password'
+-> done: MainMenuSteps.EnterAs("qweasd") (0,4s)
+And User enter "qwert" to 'New password' input field
+-> done: MainMenuSteps.EnterNewPasswordToInputField("qwert") (0,7s)
+And User enter "qwert" to 'Reenter new password' input field
+-> done: MainMenuSteps.ReenterNewPasswordToInputField("qwert") (0,2s)
+And User clicks on 'Save changes' button
+-> done: MainMenuSteps.ClickOnSaveChangesButton() (2,3s)
+Then User checks that information box about password changing is "false"
+-> done: MainMenuSteps.CheckThatInformationBoxAboutPasswordChangingIsShown("false") (0,0s)
+]]></output>
+              </test-case>
+            </test-suite>
+            <test-suite type="ParameterizedMethod" id="1-1007" name="CheckUserAuthorization" fullname="ClassLibrary3.Features.AccountTestsFeature.CheckUserAuthorization" classname="ClassLibrary3.Features.AccountTestsFeature" runstate="Runnable" testcasecount="5" result="Passed" start-time="2021-06-20T21:12:51.6047529Z" end-time="2021-06-20T21:15:08.2008586Z" duration="136.595927" total="5" passed="5" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="5">
+              <properties>
+                <property name="Description" value="Check user authorization" />
+              </properties>
+              <test-case id="1-1002" name="CheckUserAuthorization(&quot;amazonTestAcc1234@gmail.com&quot;,&quot;qweasd&quot;,&quot;Selindzher&quot;,null)" fullname="ClassLibrary3.Features.AccountTestsFeature.CheckUserAuthorization(&quot;amazonTestAcc1234@gmail.com&quot;,&quot;qweasd&quot;,&quot;Selindzher&quot;,null)" methodname="CheckUserAuthorization" classname="ClassLibrary3.Features.AccountTestsFeature" runstate="Runnable" seed="744940259" result="Passed" start-time="2021-06-20T21:12:51.6047529Z" end-time="2021-06-20T21:13:01.4642753Z" duration="9.859631" asserts="1">
+                <output><![CDATA[Given User opens Amazon home page
+-> done: MainMenuSteps.OpenAmazonHomePage() (4,5s)
+When User clicks 'Sign in' button
+-> done: MainMenuSteps.ClickSignInButton() (1,3s)
+And User enter "amazonTestAcc1234@gmail.com" to 'Enter email or phone number' input field
+-> done: MainMenuSteps.EnterLoginToEmailOrPhoneNumberInputField("amazonTestAcc1234...") (0,3s)
+And User clicks on 'Continue authorization' button
+-> done: MainMenuSteps.ClickOnContinueAuthorizationButton() (1,4s)
+And User enter "qweasd" to 'Enter password' input field
+-> done: MainMenuSteps.EnterToInputField("qweasd") (0,1s)
+And User clicks on 'Continue authorization' button
+-> done: MainMenuSteps.ClickOnContinueAuthorizationButton() (0,1s)
+Then User checks that user is authorized as "Selindzher" "qweasd"
+-> done: MainMenuSteps.CheckThatUserIsAuthorizedAs("Selindzher", "qweasd") (1,9s)
+]]></output>
+              </test-case>
+              <test-case id="1-1003" name="CheckUserAuthorization(&quot;testAmazon1235@gmail.com&quot;,&quot;qwea&quot;,&quot;amazonTest&quot;,null)" fullname="ClassLibrary3.Features.AccountTestsFeature.CheckUserAuthorization(&quot;testAmazon1235@gmail.com&quot;,&quot;qwea&quot;,&quot;amazonTest&quot;,null)" methodname="CheckUserAuthorization" classname="ClassLibrary3.Features.AccountTestsFeature" runstate="Runnable" seed="1309822651" result="Passed" start-time="2021-06-20T21:13:01.4642753Z" end-time="2021-06-20T21:13:40.0000310Z" duration="38.534892" asserts="1">
+                <output><![CDATA[Given User opens Amazon home page
+-> done: MainMenuSteps.OpenAmazonHomePage() (4,3s)
+When User clicks 'Sign in' button
+-> done: MainMenuSteps.ClickSignInButton() (1,1s)
+And User enter "testAmazon1235@gmail.com" to 'Enter email or phone number' input field
+-> done: MainMenuSteps.EnterLoginToEmailOrPhoneNumberInputField("testAmazon1235@gm...") (0,2s)
+And User clicks on 'Continue authorization' button
+-> done: MainMenuSteps.ClickOnContinueAuthorizationButton() (0,9s)
+And User enter "qwea" to 'Enter password' input field
+-> done: MainMenuSteps.EnterToInputField("qwea") (0,1s)
+And User clicks on 'Continue authorization' button
+-> done: MainMenuSteps.ClickOnContinueAuthorizationButton() (0,1s)
+Then User checks that user is authorized as "amazonTest" "qwea"
+-> done: MainMenuSteps.CheckThatUserIsAuthorizedAs("amazonTest", "qwea") (31,6s)
+]]></output>
+              </test-case>
+              <test-case id="1-1004" name="CheckUserAuthorization(&quot;testAmazon1235@gmail.com&quot;,&quot;&quot;,&quot;amazonTest&quot;,null)" fullname="ClassLibrary3.Features.AccountTestsFeature.CheckUserAuthorization(&quot;testAmazon1235@gmail.com&quot;,&quot;&quot;,&quot;amazonTest&quot;,null)" methodname="CheckUserAuthorization" classname="ClassLibrary3.Features.AccountTestsFeature" runstate="Runnable" seed="1985766584" result="Passed" start-time="2021-06-20T21:13:40.0000310Z" end-time="2021-06-20T21:14:19.4106482Z" duration="39.410813" asserts="1">
+                <output><![CDATA[Given User opens Amazon home page
+-> done: MainMenuSteps.OpenAmazonHomePage() (5,1s)
+When User clicks 'Sign in' button
+-> done: MainMenuSteps.ClickSignInButton() (1,3s)
+And User enter "testAmazon1235@gmail.com" to 'Enter email or phone number' input field
+-> done: MainMenuSteps.EnterLoginToEmailOrPhoneNumberInputField("testAmazon1235@gm...") (0,4s)
+And User clicks on 'Continue authorization' button
+-> done: MainMenuSteps.ClickOnContinueAuthorizationButton() (1,5s)
+And User enter "" to 'Enter password' input field
+-> done: MainMenuSteps.EnterToInputField("") (0,1s)
+And User clicks on 'Continue authorization' button
+-> done: MainMenuSteps.ClickOnContinueAuthorizationButton() (0,1s)
+Then User checks that user is authorized as "amazonTest" ""
+-> done: MainMenuSteps.CheckThatUserIsAuthorizedAs("amazonTest", "") (30,5s)
+]]></output>
+              </test-case>
+              <test-case id="1-1005" name="CheckUserAuthorization(&quot;&quot;,&quot;qweasd&quot;,&quot;amazonTest&quot;,null)" fullname="ClassLibrary3.Features.AccountTestsFeature.CheckUserAuthorization(&quot;&quot;,&quot;qweasd&quot;,&quot;amazonTest&quot;,null)" methodname="CheckUserAuthorization" classname="ClassLibrary3.Features.AccountTestsFeature" runstate="Runnable" seed="863579201" result="Passed" start-time="2021-06-20T21:14:19.4106482Z" end-time="2021-06-20T21:14:25.6908199Z" duration="6.280804" asserts="1">
+                <output><![CDATA[Given User opens Amazon home page
+-> done: MainMenuSteps.OpenAmazonHomePage() (3,9s)
+When User clicks 'Sign in' button
+-> done: MainMenuSteps.ClickSignInButton() (0,8s)
+And User enter "" to 'Enter email or phone number' input field
+-> done: MainMenuSteps.EnterLoginToEmailOrPhoneNumberInputField("") (0,1s)
+And User clicks on 'Continue authorization' button
+-> done: MainMenuSteps.ClickOnContinueAuthorizationButton() (0,1s)
+And User enter "qweasd" to 'Enter password' input field
+-> done: MainMenuSteps.EnterToInputField("qweasd") (0,1s)
+And User clicks on 'Continue authorization' button
+-> done: MainMenuSteps.ClickOnContinueAuthorizationButton() (0,7s)
+Then User checks that user is authorized as "amazonTest" "qweasd"
+-> done: MainMenuSteps.CheckThatUserIsAuthorizedAs("amazonTest", "qweasd") (0,1s)
+]]></output>
+              </test-case>
+              <test-case id="1-1006" name="CheckUserAuthorization(&quot;testAmazon1235@gmail.com&quot;,&quot;@#$@#$&quot;,&quot;amTest&quot;,null)" fullname="ClassLibrary3.Features.AccountTestsFeature.CheckUserAuthorization(&quot;testAmazon1235@gmail.com&quot;,&quot;@#$@#$&quot;,&quot;amTest&quot;,null)" methodname="CheckUserAuthorization" classname="ClassLibrary3.Features.AccountTestsFeature" runstate="Runnable" seed="608521955" result="Passed" start-time="2021-06-20T21:14:25.6918227Z" end-time="2021-06-20T21:15:08.2008586Z" duration="42.509497" asserts="1">
+                <output><![CDATA[Given User opens Amazon home page
+-> done: MainMenuSteps.OpenAmazonHomePage() (6,7s)
+When User clicks 'Sign in' button
+-> done: MainMenuSteps.ClickSignInButton() (1,2s)
+And User enter "testAmazon1235@gmail.com" to 'Enter email or phone number' input field
+-> done: MainMenuSteps.EnterLoginToEmailOrPhoneNumberInputField("testAmazon1235@gm...") (0,2s)
+And User clicks on 'Continue authorization' button
+-> done: MainMenuSteps.ClickOnContinueAuthorizationButton() (2,0s)
+And User enter "@#$@#$" to 'Enter password' input field
+-> done: MainMenuSteps.EnterToInputField("@#$@#$") (0,1s)
+And User clicks on 'Continue authorization' button
+-> done: MainMenuSteps.ClickOnContinueAuthorizationButton() (0,2s)
+Then User checks that user is authorized as "amTest" "@#$@#$"
+-> done: MainMenuSteps.CheckThatUserIsAuthorizedAs("amTest", "@#$@#$") (31,9s)
+]]></output>
+              </test-case>
+            </test-suite>
+          </test-suite>
+          <test-suite type="TestFixture" id="1-1016" name="SmokeTestsFeature" fullname="ClassLibrary3.Features.SmokeTestsFeature" classname="ClassLibrary3.Features.SmokeTestsFeature" runstate="Runnable" testcasecount="8" result="Passed" start-time="2021-06-20T21:11:46.6694398Z" end-time="2021-06-20T21:16:00.8710854Z" duration="254.201447" total="8" passed="8" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="25">
+            <properties>
+              <property name="Description" value="SmokeTests" />
+            </properties>
+            <test-suite type="ParameterizedMethod" id="1-1021" name="CheckProductCart" fullname="ClassLibrary3.Features.SmokeTestsFeature.CheckProductCart" classname="ClassLibrary3.Features.SmokeTestsFeature" runstate="Runnable" testcasecount="4" result="Passed" start-time="2021-06-20T21:11:46.6804424Z" end-time="2021-06-20T21:15:13.4534939Z" duration="206.773207" total="4" passed="4" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="11">
+              <properties>
+                <property name="Description" value="Check product cart" />
+              </properties>
+              <test-case id="1-1017" name="CheckProductCart(&quot;999&quot;,null)" fullname="ClassLibrary3.Features.SmokeTestsFeature.CheckProductCart(&quot;999&quot;,null)" methodname="CheckProductCart" classname="ClassLibrary3.Features.SmokeTestsFeature" runstate="Runnable" seed="1306844003" result="Passed" start-time="2021-06-20T21:11:46.6804424Z" end-time="2021-06-20T21:12:41.3542782Z" duration="54.673307" asserts="3">
+                <output><![CDATA[Given User opens Amazon home page
+-> done: MainMenuSteps.OpenAmazonHomePage() (6,0s)
+When User searches "QNAP TS-451D2-4G" using search field
+-> done: MainMenuSteps.SearcheUsingSearchField(""QNAP TS-451D2-4G"") (4,0s)
+And User clicks on first product
+-> done: MainMenuSteps.ClickOnFirstProduct() (5,1s)
+And User clicks on 'Add to cart' button
+-> done: MainMenuSteps.ClickOnAddToCartButton() (1,3s)
+And User clicks on 'Cart' button
+-> done: MainMenuSteps.ClickOnCartButton() (32,3s)
+Then User checks amount of products into the cart
+-> done: MainMenuSteps.CheckAmountOfProductsIntoTheCart() (0,4s)
+When User clicks on 'Quantity' button
+-> done: MainMenuSteps.ClickOnQuantityButton() (0,5s)
+And User clicks on 'More then ten' dropdown list item
+-> done: MainMenuSteps.ClickOnMoreThenTenDropdownListItem() (0,5s)
+And User enters "999" to 'Quantity input field'
+-> done: MainMenuSteps.EnterToQuantityInputField("999") (0,3s)
+And User clicks 'Update' button
+-> done: MainMenuSteps.ClickUpdateButton() (0,3s)
+Then User checks that total price is changed accordingly to 999 or existence of error
+-> done: MainMenuSteps.CheckThatTotalPriceIsChangedAccordinglyToOrExistenceOfError(999) (2,2s)
+When User clicks on 'Delete' button
+-> done: MainMenuSteps.ClickOnButton() (0,2s)
+Then User checks that cart is empty
+-> done: MainMenuSteps.CheckThatCartIsEmpty() (1,0s)
+]]></output>
+              </test-case>
+              <test-case id="1-1018" name="CheckProductCart(&quot;0&quot;,null)" fullname="ClassLibrary3.Features.SmokeTestsFeature.CheckProductCart(&quot;0&quot;,null)" methodname="CheckProductCart" classname="ClassLibrary3.Features.SmokeTestsFeature" runstate="Runnable" seed="1453719524" result="Passed" start-time="2021-06-20T21:12:41.3542782Z" end-time="2021-06-20T21:13:32.6659819Z" duration="51.311514" asserts="2">
+                <output><![CDATA[Given User opens Amazon home page
+-> done: MainMenuSteps.OpenAmazonHomePage() (5,1s)
+When User searches "QNAP TS-451D2-4G" using search field
+-> done: MainMenuSteps.SearcheUsingSearchField(""QNAP TS-451D2-4G"") (3,3s)
+And User clicks on first product
+-> done: MainMenuSteps.ClickOnFirstProduct() (6,4s)
+And User clicks on 'Add to cart' button
+-> done: MainMenuSteps.ClickOnAddToCartButton() (1,5s)
+And User clicks on 'Cart' button
+-> done: MainMenuSteps.ClickOnCartButton() (33,0s)
+Then User checks amount of products into the cart
+-> done: MainMenuSteps.CheckAmountOfProductsIntoTheCart() (0,1s)
+When User clicks on 'Quantity' button
+-> done: MainMenuSteps.ClickOnQuantityButton() (0,2s)
+And User clicks on 'More then ten' dropdown list item
+-> done: MainMenuSteps.ClickOnMoreThenTenDropdownListItem() (0,2s)
+And User enters "0" to 'Quantity input field'
+-> done: MainMenuSteps.EnterToQuantityInputField("0") (0,1s)
+And User clicks 'Update' button
+-> done: MainMenuSteps.ClickUpdateButton() (0,3s)
+Then User checks that total price is changed accordingly to 0 or existence of error
+-> done: MainMenuSteps.CheckThatTotalPriceIsChangedAccordinglyToOrExistenceOfError(0) (0,0s)
+When User clicks on 'Delete' button
+-> done: MainMenuSteps.ClickOnButton() (0,1s)
+Then User checks that cart is empty
+-> done: MainMenuSteps.CheckThatCartIsEmpty() (0,6s)
+]]></output>
+              </test-case>
+              <test-case id="1-1019" name="CheckProductCart(&quot;10&quot;,null)" fullname="ClassLibrary3.Features.SmokeTestsFeature.CheckProductCart(&quot;10&quot;,null)" methodname="CheckProductCart" classname="ClassLibrary3.Features.SmokeTestsFeature" runstate="Runnable" seed="1525839760" result="Passed" start-time="2021-06-20T21:13:32.6659819Z" end-time="2021-06-20T21:14:23.5146522Z" duration="50.848852" asserts="3">
+                <output><![CDATA[Given User opens Amazon home page
+-> done: MainMenuSteps.OpenAmazonHomePage() (3,8s)
+When User searches "QNAP TS-451D2-4G" using search field
+-> done: MainMenuSteps.SearcheUsingSearchField(""QNAP TS-451D2-4G"") (2,8s)
+And User clicks on first product
+-> done: MainMenuSteps.ClickOnFirstProduct() (6,2s)
+And User clicks on 'Add to cart' button
+-> done: MainMenuSteps.ClickOnAddToCartButton() (1,3s)
+And User clicks on 'Cart' button
+-> done: MainMenuSteps.ClickOnCartButton() (31,7s)
+Then User checks amount of products into the cart
+-> done: MainMenuSteps.CheckAmountOfProductsIntoTheCart() (0,1s)
+When User clicks on 'Quantity' button
+-> done: MainMenuSteps.ClickOnQuantityButton() (0,1s)
+And User clicks on 'More then ten' dropdown list item
+-> done: MainMenuSteps.ClickOnMoreThenTenDropdownListItem() (0,2s)
+And User enters "10" to 'Quantity input field'
+-> done: MainMenuSteps.EnterToQuantityInputField("10") (0,1s)
+And User clicks 'Update' button
+-> done: MainMenuSteps.ClickUpdateButton() (0,6s)
+Then User checks that total price is changed accordingly to 10 or existence of error
+-> done: MainMenuSteps.CheckThatTotalPriceIsChangedAccordinglyToOrExistenceOfError(10) (1,8s)
+When User clicks on 'Delete' button
+-> done: MainMenuSteps.ClickOnButton() (0,1s)
+Then User checks that cart is empty
+-> done: MainMenuSteps.CheckThatCartIsEmpty() (1,0s)
+]]></output>
+              </test-case>
+              <test-case id="1-1020" name="CheckProductCart(&quot;-5&quot;,null)" fullname="ClassLibrary3.Features.SmokeTestsFeature.CheckProductCart(&quot;-5&quot;,null)" methodname="CheckProductCart" classname="ClassLibrary3.Features.SmokeTestsFeature" runstate="Runnable" seed="2076260790" result="Passed" start-time="2021-06-20T21:14:23.5146522Z" end-time="2021-06-20T21:15:13.4534939Z" duration="49.938669" asserts="3">
+                <output><![CDATA[Given User opens Amazon home page
+-> done: MainMenuSteps.OpenAmazonHomePage() (4,3s)
+When User searches "QNAP TS-451D2-4G" using search field
+-> done: MainMenuSteps.SearcheUsingSearchField(""QNAP TS-451D2-4G"") (5,3s)
+And User clicks on first product
+-> done: MainMenuSteps.ClickOnFirstProduct() (4,5s)
+And User clicks on 'Add to cart' button
+-> done: MainMenuSteps.ClickOnAddToCartButton() (0,7s)
+And User clicks on 'Cart' button
+-> done: MainMenuSteps.ClickOnCartButton() (31,6s)
+Then User checks amount of products into the cart
+-> done: MainMenuSteps.CheckAmountOfProductsIntoTheCart() (0,0s)
+When User clicks on 'Quantity' button
+-> done: MainMenuSteps.ClickOnQuantityButton() (0,1s)
+And User clicks on 'More then ten' dropdown list item
+-> done: MainMenuSteps.ClickOnMoreThenTenDropdownListItem() (0,1s)
+And User enters "-5" to 'Quantity input field'
+-> done: MainMenuSteps.EnterToQuantityInputField("-5") (0,1s)
+And User clicks 'Update' button
+-> done: MainMenuSteps.ClickUpdateButton() (0,1s)
+Then User checks that total price is changed accordingly to -5 or existence of error
+-> done: MainMenuSteps.CheckThatTotalPriceIsChangedAccordinglyToOrExistenceOfError(-5) (1,1s)
+When User clicks on 'Delete' button
+-> done: MainMenuSteps.ClickOnButton() (0,1s)
+Then User checks that cart is empty
+-> done: MainMenuSteps.CheckThatCartIsEmpty() (1,6s)
+]]></output>
+              </test-case>
+            </test-suite>
+            <test-case id="1-1023" name="CheckProductFilter" fullname="ClassLibrary3.Features.SmokeTestsFeature.CheckProductFilter" methodname="CheckProductFilter" classname="ClassLibrary3.Features.SmokeTestsFeature" runstate="Runnable" seed="1488288842" result="Passed" start-time="2021-06-20T21:15:13.4534939Z" end-time="2021-06-20T21:15:31.1279345Z" duration="17.674893" asserts="8">
+              <properties>
+                <property name="Description" value="Check product filter" />
+              </properties>
+              <output><![CDATA[Given User opens Amazon home page
+-> done: MainMenuSteps.OpenAmazonHomePage() (2,9s)
+And User clicks 'Catalogue' button
+-> done: MainMenuSteps.ClickCatalogueButton() (0,8s)
+And User clicks 'Computer' menu item
+-> done: MainMenuSteps.ClickComputerMenuItem() (0,1s)
+And User clicks 'Data storage' menu item
+-> done: MainMenuSteps.ClickDataStorageMenuItem() (0,5s)
+When User clicks 'External Hard Drives' button
+-> done: MainMenuSteps.ClickExternalHardDrivesButton() (2,8s)
+And User clicks '4 stars & up' button
+-> done: MainMenuSteps.ClickMoreThenFourStarsRateButton() (0,2s)
+And User clicks 'Toshiba' button
+-> done: MainMenuSteps.ClickToshibaButton() (1,4s)
+And User clicks 'Price from fifty to one hunded' button
+-> done: MainMenuSteps.ClickFromFiftyToHundredDollarsPriceButton() (0,8s)
+And User clicks 'Portable' button
+-> done: MainMenuSteps.ClickPortableButton() (0,7s)
+And User clicks 'PC' button for 'Platform support'
+-> done: MainMenuSteps.ClickPcPlatformSupportFilterButton() (0,7s)
+And User clicks '4TB & Above' for 'Hard Drive Size' filter
+-> done: MainMenuSteps.ClickForCapacityFilter() (0,8s)
+And User clicks 'Tablet' button as 'Compatible Devices'
+-> done: MainMenuSteps.ClickTabletButtonAs() (1,2s)
+And User clicks on first 'Toshiba' product
+-> done: MainMenuSteps.ClickOnFirstToshibaProduct() (3,3s)
+And User checks that product is external hard drive
+-> done: MainMenuSteps.CheckThatProductIsExternalHardDrive() (0,1s)
+And User checks that product has rate '4 stars' or higher
+-> done: MainMenuSteps.CheckThatProductHasRateOrHigher() (0,2s)
+And User checks that product is manufactured by 'Toshiba'
+-> done: MainMenuSteps.CheckThatProductIsManufacturedBy("Toshiba") (0,2s)
+And User checks that product's price is between fifty and one hundred dollars
+-> done: MainMenuSteps.CheckThatProduct() (0,2s)
+And User checks that product is portable
+-> done: MainMenuSteps.CheckThatProductIsPortable() (0,0s)
+And User checks that product supports "PC" platform
+-> done: MainMenuSteps.CheckThatProductSupportsPlatform("PC") (0,0s)
+And User checks that product's capacity is 4TB or above
+-> done: MainMenuSteps.CheckProductsCapacity(4) (0,1s)
+Then User checks that product comparable with "Tablet"
+-> done: MainMenuSteps.CheckThatProductComparableWith("Tablet") (0,0s)
+]]></output>
+            </test-case>
+            <test-case id="1-1022" name="CheckProductPurchasing" fullname="ClassLibrary3.Features.SmokeTestsFeature.CheckProductPurchasing" methodname="CheckProductPurchasing" classname="ClassLibrary3.Features.SmokeTestsFeature" runstate="Runnable" seed="1153054317" result="Passed" start-time="2021-06-20T21:15:31.1279345Z" end-time="2021-06-20T21:15:49.2326765Z" duration="18.104837" asserts="4">
+              <properties>
+                <property name="Description" value="Check product purchasing" />
+              </properties>
+              <output><![CDATA[Given User opens Amazon home page
+-> done: MainMenuSteps.OpenAmazonHomePage() (2,9s)
+When User clicks 'Sign in' button
+-> done: MainMenuSteps.ClickSignInButton() (0,7s)
+And User logs in site as login: "amazonTestAcc1234@gmail.com" password: "qweasd"
+-> done: MainMenuSteps.LogInSiteAsLoginPassword("amazonTestAcc1234...", "qweasd") (1,0s)
+And User searches "Samsung Galaxy A51 Factory Unlocked Cell Phone" using search field
+-> done: MainMenuSteps.SearcheUsingSearchField(""Samsung Galaxy A...") (4,0s)
+And User clicks on first product
+-> done: MainMenuSteps.ClickOnFirstProduct() (3,5s)
+And User clicks on 'Buy now' button
+-> done: MainMenuSteps.ClickBuyNowButton() (2,2s)
+And User clicks on 'Country & Region' drop-down list button
+-> done: MainMenuSteps.ClickOnDrop_DownListButton() (0,1s)
+And User clicks on 'Ukraine' item into drop-down list
+-> done: MainMenuSteps.ClickOnUkraineItemIntoDrop_DownList() (0,1s)
+And User enters his "Ivan", "Boost red street", "Dnipro", "09898" and "380690000000"
+-> done: MainMenuSteps.EnterHisAnd("Ivan", "Boost red street", "Dnipro", "09898", "380690000000") (0,9s)
+And User clicks 'Use this address' button
+-> done: MainMenuSteps.ClickButton() (0,1s)
+And User clicks on 'Continue' button
+-> done: MainMenuSteps.ClickOnContinueButton() (0,0s)
+And User checks that 'Add credit cart' button is visible
+-> done: MainMenuSteps.CheckThatButtonIsVisible() (2,2s)
+And User checks that 'Enter a gift card, voucher or promotional code' link is visible
+-> done: MainMenuSteps.CheckThatLinkIsVisible() (0,0s)
+And User checks that 'Learn more' link in the 'Amazon store card' block is visible
+-> done: MainMenuSteps.CheckThatLinkInTheBlockIsVisible() (0,0s)
+Then User checks that 'Add a personal checking account' button is visible
+-> done: MainMenuSteps.CheckThatAddAPersonalCheckingAccounButtonIsVisible() (0,0s)
+]]></output>
+            </test-case>
+            <test-suite type="ParameterizedMethod" id="1-1026" name="CheckProductsSorting" fullname="ClassLibrary3.Features.SmokeTestsFeature.CheckProductsSorting" classname="ClassLibrary3.Features.SmokeTestsFeature" runstate="Runnable" testcasecount="2" result="Passed" start-time="2021-06-20T21:15:49.2336781Z" end-time="2021-06-20T21:16:00.8710854Z" duration="11.637498" total="2" passed="2" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="2">
+              <properties>
+                <property name="Description" value="Check products sorting" />
+              </properties>
+              <test-case id="1-1024" name="CheckProductsSorting(&quot;asc&quot;,null)" fullname="ClassLibrary3.Features.SmokeTestsFeature.CheckProductsSorting(&quot;asc&quot;,null)" methodname="CheckProductsSorting" classname="ClassLibrary3.Features.SmokeTestsFeature" runstate="Runnable" seed="2092251391" result="Passed" start-time="2021-06-20T21:15:49.2336781Z" end-time="2021-06-20T21:15:55.0811199Z" duration="5.848255" asserts="1">
+                <output><![CDATA[Given User opens Amazon home page
+-> done: MainMenuSteps.OpenAmazonHomePage() (3,0s)
+When User searches "Nesquik" using search field
+-> done: MainMenuSteps.SearcheUsingSearchField(""Nesquik"") (2,2s)
+And User clicks 'Sorting type' drop-down list button
+-> done: MainMenuSteps.ClickDrop_DownListButton() (0,1s)
+And User chooses "asc" and click this sorting type dropdown list item
+-> done: MainMenuSteps.ChooseAndClickThisSortingTypeDropdownListItem("asc") (0,2s)
+Then User checks that products are sorted by "asc"
+-> done: MainMenuSteps.CheckThatProductsAreSortedBy("asc") (0,0s)
+]]></output>
+              </test-case>
+              <test-case id="1-1025" name="CheckProductsSorting(&quot;desc&quot;,null)" fullname="ClassLibrary3.Features.SmokeTestsFeature.CheckProductsSorting(&quot;desc&quot;,null)" methodname="CheckProductsSorting" classname="ClassLibrary3.Features.SmokeTestsFeature" runstate="Runnable" seed="2047769787" result="Passed" start-time="2021-06-20T21:15:55.0811199Z" end-time="2021-06-20T21:16:00.8710854Z" duration="5.789106" asserts="1">
+                <output><![CDATA[Given User opens Amazon home page
+-> done: MainMenuSteps.OpenAmazonHomePage() (2,9s)
+When User searches "Nesquik" using search field
+-> done: MainMenuSteps.SearcheUsingSearchField(""Nesquik"") (2,3s)
+And User clicks 'Sorting type' drop-down list button
+-> done: MainMenuSteps.ClickDrop_DownListButton() (0,1s)
+And User chooses "desc" and click this sorting type dropdown list item
+-> done: MainMenuSteps.ChooseAndClickThisSortingTypeDropdownListItem("desc") (0,2s)
+Then User checks that products are sorted by "desc"
+-> done: MainMenuSteps.CheckThatProductsAreSortedBy("desc") (0,0s)
+]]></output>
+              </test-case>
+            </test-suite>
+          </test-suite>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>
